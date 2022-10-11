@@ -79,7 +79,7 @@ const Chart = ({data,country}) =>{
                 backgroundColor:[
                     'rgb(0,0,255,0.5)','rgb(0,255,0,0.5)','rgb(255,0,0,0.5)'
                 ],
-                data:[data.confirmed.value,data.recovered.value,data.deaths.value]
+                data:[parseInt(data.confirmed.split(",").join("")),parseInt(data.recovered.split(",").join("")),parseInt(data.deaths.split(",").join(""))]
             }],
             
         }}
